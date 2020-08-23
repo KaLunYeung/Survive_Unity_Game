@@ -46,6 +46,7 @@ public class Shoot : MonoBehaviour
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * RiflebulletForce, ForceMode2D.Impulse);
+        Destroy(bullet, 2f);
     }
     void ShootsShotGun()
     {
@@ -53,9 +54,10 @@ public class Shoot : MonoBehaviour
         for (int i = 0; i < bulletCount; i++) {
 
             firePoint.Rotate(0, 0, Random.Range(-20, 20));
-            GameObject bullet2 = Instantiate(ShotGunPrefab, firePoint.position, firePoint.rotation);
-            Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
-            rb2.AddForce(firePoint.up * ShotGunbulletForce, ForceMode2D.Impulse);
+            GameObject bullet = Instantiate(ShotGunPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.up * ShotGunbulletForce, ForceMode2D.Impulse);
+            Destroy(bullet, 2f);
 
         }
         
