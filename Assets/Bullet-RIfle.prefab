@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5896639049205576549}
   - component: {fileID: 4764859124260996439}
   m_Layer: 8
-  m_Name: RiflePrefab
+  m_Name: Bullet-RIfle
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,3 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 2903839565187589591, guid: 9f6c04a989f18cd49ba6ad0a1bd48bb5,
     type: 3}
+  Manager: {fileID: 8535424888408513526, guid: 7914fea8a34110243be375c08bddb242, type: 3}

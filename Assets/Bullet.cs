@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject hitEffect;
+    public GameObject Manager;
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -18,6 +19,7 @@ public class Bullet : MonoBehaviour
             if (collision.gameObject.GetComponent<HealthSystem>().currentHealth <= 0)
             {
                 Destroy(collision.gameObject);
+                GameObject.Find("GameManager").GetComponent<GameManagerOne>().EnemyKilled += 1;
             }
 
         }
