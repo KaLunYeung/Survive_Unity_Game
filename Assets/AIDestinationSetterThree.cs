@@ -18,7 +18,7 @@ namespace Pathfinding
 	{
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
-		float distanceBeforeStop = 8.0f;
+		float distanceBeforeStop = 5.0f;
 		
 		
 

@@ -94,7 +94,7 @@ public class Shoot : MonoBehaviour
         if (Input.GetKeyDown("e"))
         {
             guntype = "e";
-            fireRate = 3f;
+            fireRate = 2f;
 
         }
 

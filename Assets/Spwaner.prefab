@@ -90,7 +90,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3536125826239185092}
-  - component: {fileID: 3536125826239185091}
   m_Layer: 0
   m_Name: Spwaner
   m_TagString: Spawner
@@ -113,18 +112,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3536125826239185091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3536125826239185093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd7e81c64299ff4fabd0e8def0bc95f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NormalZombie: {fileID: 1922517079695149423, guid: 5885dce95add3e840a6d3e4a3fd5a984,
-    type: 3}
-  spawnRate: 2

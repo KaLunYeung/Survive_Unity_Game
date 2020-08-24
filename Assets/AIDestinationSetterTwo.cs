@@ -18,7 +18,7 @@ namespace Pathfinding
 	{
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target ;
-		float distanceBeforeStop = 8.0f;
+		float distanceBeforeStop = 5.0f;
 		float maxSpeed = 5; // must be the same as AIPath
 		float timeCount = 0;
 		public float delayTime = 3.0f;
